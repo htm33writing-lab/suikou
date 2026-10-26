@@ -229,9 +229,10 @@
 
   .artband{position:relative;padding:0;text-align:center;overflow:hidden;background:var(--deep)}
   .artband .artbg{position:absolute;inset:0;background:var(--art) center 50%/cover no-repeat}
-  .artband::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(10,50,38,.45),rgba(10,50,38,.2) 70%)}
+  .artband::before{content:"";position:absolute;inset:0;background:rgba(10,50,38,.48)}
   .artband .wrap{position:relative;padding-top:120px;padding-bottom:120px}
-  .artband p{font-family:var(--serif);color:#fff;font-size:clamp(20px,2.6vw,26px);letter-spacing:.14em;line-height:2.2;text-shadow:0 2px 20px rgba(0,0,0,.35)}
+  .artband p{display:inline-block;padding:28px 36px;border-radius:24px;background:radial-gradient(ellipse at center,rgba(10,46,36,.55),rgba(10,46,36,.25) 75%,transparent);font-family:var(--serif);color:#fff;font-size:clamp(20px,2.6vw,26px);letter-spacing:.14em;line-height:2.2;text-shadow:0 1px 3px rgba(0,0,0,.55),0 2px 18px rgba(0,0,0,.45)}
+  .artband p span{display:inline-block}
 
   /* form */
   .contact{background:radial-gradient(circle at 90% 10%,rgba(234,215,150,.16),transparent 40%),var(--deep);color:var(--paper)}
@@ -284,6 +285,7 @@
     .phases{grid-template-columns:1fr}
     .course{padding:34px 24px 28px}
     .artband .wrap{padding-top:84px;padding-bottom:84px}
+    .artband p{font-size:18px;letter-spacing:.08em;line-height:2;padding:22px 16px}
   }
   @media (prefers-reduced-motion:reduce){
     .breath .ring,.breath .word span{animation:none}
@@ -493,11 +495,11 @@
         <h3>鍼灸</h3>
         <span class="en">acupuncture &amp; moxibustion</span>
         <p class="desc">はり師・きゅう師（国家資格）による施術です。刺さない鍼（接触鍼）から始めることもできます。</p>
-        <dl><div><dt>初回</dt><dd>80〜90分　8,000円</dd></div><div><dt>2回目以降</dt><dd>50分　6,000円</dd></div><div><dt>出張治療・往診</dt><dd>15,000円〜</dd></div></dl>
-        <p class="fee-note">※出張治療・往診は、距離・時間・内容・人数に応じて料金が変わります。</p>
+        <dl><div><dt>初回</dt><dd>80〜90分　10,000円</dd></div><div><dt>2回目以降</dt><dd>50分　8,000円</dd></div><div><dt>出張治療・往診</dt><dd>15,000円〜</dd></div></dl>
+        <p class="fee-note">※継続治療の割引もございます。<br>※出張治療・往診は、距離・時間・内容・人数に応じて料金が変わります。</p>
       </article>
     </div>
-    <p class="menu-note">対面は本八幡のサロンで、ご予約制でお受けしています。出張治療・往診をご希望の方は、お申し込みフォームの「受け方」で「出張・往診」を選び、場所と人数をお書きください。</p>
+    <p class="menu-note">対面は、千葉県茂原市本納のサロンで、ご予約制でお受けしています。不定期で、本八幡のサロンでの施術、また都内のレンタルサロンでの出張治療も行っていますので、日程はお問い合わせください。<br>出張治療・往診をご希望の方は、お申し込みフォームの「受け方」で「出張・往診」を選び、場所と人数をお書きください。</p>
   </div>
 </section>
 
@@ -591,7 +593,8 @@
     <span class="eyebrow">access</span>
     <h2>場所・受け方</h2>
     <dl class="access-list">
-      <div><dt>サロン</dt><dd>千葉県市川市・本八幡（詳しい場所は、ご予約が決まったときにお知らせします）</dd></div>
+      <div><dt>サロン</dt><dd>千葉県茂原市本納（詳しい場所は、ご予約が決まったときにお知らせします）</dd></div>
+      <div><dt>不定期</dt><dd>本八幡のサロン、都内のレンタルサロンでも施術しています。日程はお問い合わせください</dd></div>
       <div><dt>予約</dt><dd>完全予約制です</dd></div>
       <div><dt>出張・往診</dt><dd>ご希望の場所にうかがいます（料金は距離・時間・内容・人数により異なります）</dd></div>
       <div><dt>オンライン</dt><dd>Zoomセッション・命式鑑定・易・言語化サポートは、全国どこからでも受けられます</dd></div>
@@ -601,7 +604,7 @@
 
 <section class="artband" aria-hidden="true">
   <div class="artbg"></div>
-  <div class="wrap"><p>いつでも、自分を取り戻せる。<br>その力は、最初からあなたの中にある。</p></div>
+  <div class="wrap"><p><span>いつでも、</span><span>自分を取り戻せる。</span><br><span>その力は、</span><span>最初からあなたの中にある。</span></p></div>
 </section>
 
 <!-- 12 フォーム -->
